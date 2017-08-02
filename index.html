@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<title>天天抽奖</title>
+	<link rel="stylesheet" type="text/css" href="css/turnplate.css?vers=0.0.5">
+
+</head>
+<body>
+	<div style="display:none;">
+		<!--预加载图片-->
+		<img src="images/normal.png" alt="底盘" style="display:none;">
+		<img src="images/member1.png" alt="底盘" style="display:none;">
+	</div>
+
+	<div class="commonWrap" class="commonWrap">
+		<div class="disk-ground-container">
+			<div class="disk-ground-wrap">
+				<div class="dist-ground-btn dist-common-bg" id="dist-ground-btn">
+					<img class="dist-ground-btn-img" alt="点击" src="./images/common-btn.gif">
+				</div>
+
+				<div class="dist-group-content-selected" style="display:none;">
+					<img src="images/common-selected.png" alt="选中">
+				</div>
+
+				<div class="disk-ground" id="disk-ground">
+					<div class="disk-ground-gif">
+						<img src="images/common.gif" alt="图点">
+					</div>
+					<div class="dist-group-dipan">
+						<img src="images/normal.png" alt="底盘">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="dist-alert-wrap" style="display:none;">
+		<div class="dist-content-alert">
+			<div class="dist-alert-content">
+				<img src="images/gongxihuode.png" width="100%" alt="恭喜获得">
+				<p id="dist-alert-content-p"></p>
+			</div>
+			<input type="button" class="dist-alert-btn" value="确定"/>
+		</div>
+		<div class="dist-content-shade">
+		</div>
+	</div>
+
+	<div id="dist-hint-wrap" style="display:none;" >
+		<div class="dist-content-hint">
+		</div>
+		<div class="dist-content-shade">
+		</div>
+	</div>
+	<script src="js/libs/require.js?vers=0.0.2" type="text/javascript" data-main="js/turntable.js?_t=201707071952" async defer charset="utf-8"></script>
+</body>
+</html>
